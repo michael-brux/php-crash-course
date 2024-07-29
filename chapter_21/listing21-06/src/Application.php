@@ -9,7 +9,7 @@ class Application
 {
     const PATH_TO_TEMPLATES = __DIR__ . '/../templates';
 
-    private $twig;
+    private Environment $twig;
 
     public function __construct()
     {
