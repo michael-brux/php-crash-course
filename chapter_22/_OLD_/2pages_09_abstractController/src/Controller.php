@@ -1,0 +1,21 @@
+<?php
+
+
+namespace Mattsmithdev;
+
+
+use \Twig\Loader\FilesystemLoader;
+use \Twig\Environment;
+
+abstract class Controller
+{
+    const PATH_TO_TEMPLATES = __DIR__ . '/../templates';
+
+    protected $twig;
+
+    public function __construct()
+    {
+        $loader = new FilesystemLoader(self::PATH_TO_TEMPLATES);
+        $this->twig = new Environment($loader);
+    }
+}

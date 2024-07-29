@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Twig examples</title>
+</head>
+
+<body>
+Hello {{ name }}
+<hr>
+for dinner you will have: {{ meals.dinner }}
+<hr>
+the price of {{ product.getDescription() }} is $ {{ product.price }}
+
+<hr>
+details about product: {{ product }}
+
+<hr>
+
+<ul>
+    {% for key, value in meals %}
+        <li>
+            meal: {{ key }} = {{ value }}
+        </li>
+    {% else %}
+        <li>
+            (there are no meals to list)
+        </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

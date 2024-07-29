@@ -1,0 +1,55 @@
+<?php
+
+namespace Mattsmithdev;
+
+use \Twig\Loader\FilesystemLoader;
+use \Twig\Environment;
+
+class Application
+{
+    const PATH_TO_TEMPLATES = __DIR__ . '/../templates';
+
+    private $twig;
+
+    public function __construct()
+    {
+        $loader = new FilesystemLoader(self::PATH_TO_TEMPLATES);
+        $this->twig = new Environment($loader);
+    }
+
+    public function run(): void
+    {
+        $action = filter_input(INPUT_GET, 'action');
+        switch ($action) {
+            case  'contact':
+                $this->contactUs();
+                break;
+
+            case 'home':
+            default:
+                $this->homepage();
+        }
+    }
+
+    private function homepage(): void
+    {
+        $template = 'homepage.html.twig';
+        $args = [
+            'pageTitle' => 'Home Page'
+        ];
+
+        $html = $this->twig->render($template, $args);
+        print $html;
+    }
+
+    private function contactUs(): void
+    {
+        $template = 'contactUs.html.twig';
+        $args = [
+            'pageTitle' => 'Contact Us Page'
+        ];
+
+        $html = $this->twig->render($template, $args);
+        print $html;
+    }
+}

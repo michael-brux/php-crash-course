@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>MGW: {{ pageTitle }}</title>
+</head>
+
+<body>
+<header>
+    <img src="/images/logo.png" alt="logo" width="200px">
+    <ul>
+        <li>
+            <a href="/">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="/?action=contact">
+                Contact Us
+            </a>
+        </li>
+    </ul>
+</header>
+
+<blockquote>
+    <p>
+        <b>MGW. </b>
+        <br>You know it makes sense!
+    </p>
+    <p>
+        Welcome to My Great Website (MGW).
+    </p>
+</blockquote>
+
+<h1>{{ pageTitle }}</h1>
+
+
+{% block main %}
+{% endblock %}
+
+</body>
+</html>

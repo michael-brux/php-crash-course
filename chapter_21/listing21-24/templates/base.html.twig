@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>MGW: {% block pageTitle %}{% endblock %}</title>
+    <style>@import '/css/style.css'</style>
+</head>
+
+<body>
+<header>
+    <img src="/images/logo.png" alt="logo" width="200px">
+    <ul>
+        <li>
+            <a href="/" class="{% block homeLink %}{% endblock %}">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="/?action=contact" class="{% block contactLink %}{% endblock %}">
+                Contact Us
+            </a>
+        </li>
+    </ul>
+</header>
+
+<blockquote>
+    <p>
+        <b>MGW. </b>
+        <br>You know it makes sense!
+    </p>
+    <p>
+        Welcome to My Great Website (MGW).
+    </p>
+</blockquote>
+
+<h1>{{ block('pageTitle') }}</h1>
+
+
+{% block main %}
+{% endblock %}
+
+</body>
+</html>

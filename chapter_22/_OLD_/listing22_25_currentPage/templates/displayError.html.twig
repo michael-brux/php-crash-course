@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}form errors{% endblock %}
+
+{% block body %}
+<h1>Errors in data for enquiry form</h1>
+
+<div class="alert alert-danger" role="alert">
+    Sorry, there was a problem with your form submission:
+
+    <ul>
+        {% for error in errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

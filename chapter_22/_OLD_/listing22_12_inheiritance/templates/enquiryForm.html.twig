@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}enquiry form{% endblock %}
+
+{% block body %}
+<h1>MGW Sales Enquiry</h1>
+<form method="POST" action="/index.php?action=processForm">
+    <div class="form-group">
+        <label for="customerName">Your name</label>
+        <input id="customerName" class="form-control" name="customerName">
+    </div>
+
+    <div class="form-group">
+        <label for="customerEmail">Email address</label>
+        <input id="customerEmail" type="email" class="form-control" aria-describedby="emailHelp" name="customerEmail">
+        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <div class="form-group">
+        <label for="enquiry">Your enquiry</label>
+        <textarea id="enquiry" class="form-control" name="enquiry" rows="3"></textarea>
+    </div>
+
+    <input type="submit" value="Submit enquiry" class="btn btn-success">
+</form>
+{% endblock %}
