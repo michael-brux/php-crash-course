@@ -1,0 +1,5 @@
+{
+    "require": {
+        "nvanheuverzwijn/monolog-logdna": "^3.2"
+    }
+}
