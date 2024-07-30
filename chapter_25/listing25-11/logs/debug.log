@@ -1,0 +1,2 @@
+[2024-07-30T13:40:22.058695+00:00] channel1.WARNING: I am a warning. [] []
+[2024-07-30T13:40:22.059712+00:00] channel1.ERROR: I am a test error! {"exception":"[object] (Exception(code: 0): example of exception object at /Users/matt/Documents/github/php-crash-course/chapter_25/listing25-11/src/Application.php:10)"} []
