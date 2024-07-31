@@ -15,7 +15,8 @@ $connection = new \PDO(
 );
 $sql = 'CREATE TABLE IF NOT EXISTS product ('
     . 'id integer PRIMARY KEY AUTO_INCREMENT,'
-    . 'description text,' . 'price float'
+    . 'description text,' 
+	. 'price float'
     . ')';
 $stmt1 = $connection->prepare($sql);
 $stmt1->execute();
