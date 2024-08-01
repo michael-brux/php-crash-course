@@ -1,0 +1,11 @@
+{
+  "autoload":{
+    "psr-4":{
+      "Mattsmithdev\\":"src"
+    }
+  },
+  "require": {
+    "twig/twig": "^3.10",
+    "mattsmithdev/pdo-crud-for-free-repositories": "^2.6"
+  }
+}

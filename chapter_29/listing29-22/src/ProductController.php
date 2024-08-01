@@ -77,10 +77,7 @@ class ProductController extends Controller
 
     public function processCreate(string $description, float $price): void
     {
-        $this->productRepository->insert($description, $price);
-
-        $newProductId =
-            $this->productRepository->insert($description, $price);
+        $newProductId = $this->productRepository->insert($description, $price);
 
         $this->list($newProductId);
     }

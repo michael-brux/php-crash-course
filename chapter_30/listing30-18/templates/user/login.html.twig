@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}login page{% endblock %}
+
+{% block body %}
+    <h1>Login</h1>
+
+    <form method="POST" action="/?action=processLogin">
+        <p>
+            Username:
+            <input name="username">
+        </p>
+        <p>
+            Password:
+            <input name="password" type="password">
+        </p>
+        <input type="submit">
+    </form>
+{% endblock %}

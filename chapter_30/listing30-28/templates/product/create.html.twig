@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}create product page{% endblock %}
+
+{% block body %}
+    <h1>Create NEW Product page</h1>
+
+    <form method="POST" action="/?action=processCreate">
+    <p>
+        Description:
+        <input name="description">
+    </p>
+    <p>
+        Price:
+        <input name="price" type="number" min="0" step="0.01">
+    </p>
+    <input type="submit">
+</form>
+{% endblock %}

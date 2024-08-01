@@ -1,0 +1,13 @@
+{
+  "autoload":{
+    "psr-4":{
+      "Mattsmithdev\\":"src"
+    }
+  },
+  "require": {
+    "twig/twig": "^3.10",
+    "symfony/dotenv": "^7.1",
+    "doctrine/orm": "^3.2",
+    "symfony/cache": "^7.1"
+  }
+}

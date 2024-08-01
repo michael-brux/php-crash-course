@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}User List page{% endblock %}
+
+{% block userLink %}active{% endblock %}
+
+{% block body %}
+    <h1>User List page</h1>
+
+    <ul>
+        2 {% for user in users %}
+            <li class="mt-5">
+                id: {{ user.id }}
+                <br>
+                username: {{  user.username }}
+                <br>
+                password: {{  user.password }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
