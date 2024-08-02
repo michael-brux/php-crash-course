@@ -38,6 +38,10 @@ class ProductRepository
         $stmt->setFetchMode(\PDO::FETCH_CLASS, Product::class);
         $product = $stmt->fetch();
 
+        if ($product == false) {
+            return NULL;
+        }
+
         return $product;
     }
 }
