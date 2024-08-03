@@ -1,0 +1,17 @@
+.fa-star-o,
+.fa-star {
+    color: gold;
+}
+
+.fa-star.disable{
+    color: lightgray;
+}
+
+.product img {
+    width:100%;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}

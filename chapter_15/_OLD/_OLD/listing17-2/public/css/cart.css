@@ -1,0 +1,41 @@
+
+/*#cart-row {*/
+/*    display: flex;*/
+/*    margin: 0 0 .5rem 0;*/
+/*    align-items: center;*/
+/*}*/
+
+/*#cart-row div {*/
+/*    flex: 1;*/
+/*    !*background: salmon;*!*/
+/*    padding: .2rem;*/
+/*    !*margin: .2rem;*!*/
+/*    text-align: center;*/
+/*}*/
+
+.spacing {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.product-image a{
+    display:block
+}
+
+.price{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.fa-star-o,
+.fa-star {
+    color: gold;
+}
+
+.fa-star.disable{
+    color: lightgrey;
+}
+
+img {
+    width:100%;
+}
