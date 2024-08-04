@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block pageTitle %}Staff List{% endblock %}
+
+{% block staffLink %}active{% endblock %}
+
+{% block main %}
+    <p>
+        Here is a list of our staff members.
+    </p>
+
+    <dl class="container bg-light">
+        {% for staffMember in staffObjects %}
+            <dt>{{ staffMember.firstName }} {{ staffMember.lastName }}</dt>
+            <dd> {{ staffMember.email }}</dd>
+        {% else %}
+            <dt>(sorry, there are no staff members to list)</dt>
+        {% endfor %}
+    </dl>
+
+{% endblock %}
