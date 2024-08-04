@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block pageTitle %}Staff list Page{% endblock %}
+
+{% block staffLink %}active{% endblock %}
+
+{% block main %}
+    <table>
+
+    {% for staffObject in staffObjects %}
+        <tr>
+            <td>
+                <strong>{{staffObject.jobTitle }}</strong> =
+                {{ staffObject.name }}
+            </td>
+        </tr>
+    {% else %}
+        <tr>
+            <td>
+                (there are no staff member objects to list)
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+
+{% endblock %}
