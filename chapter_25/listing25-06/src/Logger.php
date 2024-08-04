@@ -4,6 +4,7 @@ namespace Mattsmithdev;
 
 use Monolog\Logger as MonologLogger;
 use Monolog\Handler\StreamHandler;
+
 abstract class Logger {
     const PATH_TO_LOG_FILE = __DIR__ . '/../logs/debug.log';
 

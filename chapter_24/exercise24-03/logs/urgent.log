@@ -1,0 +1,3 @@
+[2024-08-04T20:31:46.622142+00:00] logger.EMERGENCY: 0 emergency [] []
+[2024-08-04T20:31:46.636167+00:00] logger.ALERT: 1 alert [] []
+[2024-08-04T20:31:46.636195+00:00] logger.CRITICAL: 2 critical [] []

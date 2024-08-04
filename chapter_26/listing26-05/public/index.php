@@ -4,14 +4,14 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use Mattsmithdev\Cat;
 use Mattsmithdev\Dog;
 use Mattsmithdev\Bird;
-use Mattsmithdev\Car;
+use Mattsmithdev\DietType;
 use Mattsmithdev\PipeOrgan;
 use Mattsmithdev\Helicopter;
 
 $cat = new Cat();
 $dog = new Dog();
 $bird = new Bird();
-$car = new Car();
+$car = new DietType();
 $car->fuelType = 'petrol';
 $helicopter = new Helicopter();
 $pipeorgan = new PipeOrgan();

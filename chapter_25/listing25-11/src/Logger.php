@@ -2,8 +2,8 @@
 
 namespace Mattsmithdev;
 
-use Monolog\Logger as MonologLogger;
-use Monolog\Handler\StreamHandler;
+use \vendor\monolog\monolog\src\Monolog\Logger as MonologLogger;
+use \vendor\monolog\monolog\src\Monolog\Handler\StreamHandler;
 
 class Logger extends MonologLogger
 {

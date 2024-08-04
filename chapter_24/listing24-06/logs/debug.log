@@ -1,1 +1,2 @@
 [2024-07-30T12:07:40.424272+00:00] demo.ERROR: problem creating new product {"exception":"[object] (Exception(code: 0): attempting to set price to a negative value at /Users/matt/Documents/github/php-crash-course/chapter_24/listing24-06/src/Product.php:13)"} []
+[2024-08-04T20:30:29.643573+00:00] demo.ERROR: problem creating new product {"exception":"[object] (Exception(code: 0): attempting to set price to a negative value at /Users/matt/Documents/github/php-crash-course/chapter_24/listing24-06/src/Product.php:13)"} []
