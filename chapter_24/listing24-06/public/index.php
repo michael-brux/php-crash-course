@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Mattsmithdev\Product;
+use Mattsmithdev\Book;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 

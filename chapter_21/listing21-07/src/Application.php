@@ -2,8 +2,8 @@
 
 namespace Mattsmithdev;
 
-use \Twig\Loader\FilesystemLoader;
-use \Twig\Environment;
+use Twig\Loader\FilesystemLoader;
+use Twig\Environment;
 
 class Application
 {
