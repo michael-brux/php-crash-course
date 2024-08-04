@@ -25,7 +25,7 @@ class Application
             'dinner' => 'fish and chips',
         ];
 
-        $product1 = new Book();
+        $product1 = new Product();
         $product1->setDescription('bag of nails');
         $product1->setPrice(10.99);
 
