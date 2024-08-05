@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}create BOOK page{% endblock %}
+
+{% block main %}
+    <h1>Create NEW Book page</h1>
+
+    <form method="POST" action="/?action=processEdit&id={{ book.id }}">
+        <p>
+            Author:
+            <input name="author" value="{{ book.author }}">
+        </p>
+        <p>
+            Title:
+            <input name="title"" value="{{ book.title }}">
+        </p>
+        <p>
+            Price:
+            <input name="price" type="number" min="0" step="0.01" " value="{{ book.price }}">
+        </p>
+        <input type="submit">
+    </form>
+{% endblock %}

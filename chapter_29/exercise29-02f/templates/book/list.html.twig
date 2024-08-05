@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <h1>Book List Page</h1>
+
+
+    <ul>
+    {% for book in books %}
+        <li>
+            id: {{ book.id }}
+            <br>
+            title: {{ book.title }}
+            <br>
+            <a href="/?action=show&id={{ book.id }}">Show Details</a>
+            <br>
+            <a href="/?action=delete&id={{ book.id }}">DELETE</a>
+            <br>
+            <a href="/?action=edit&id={{ book.id }}">EDIT</a>
+
+        </li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>home page</title>
+</head>
+<body>
+<h1>Home Page</h1>
+
+<ul>
+    <li>
+        <a href="/?action=books">list books</a>
+    </li>
+
+    <li>
+        <a href="/?action=create">create NEW book</a>
+    </li>
+
+    <li>
+        <a href="/?action=deleteAll">Delete ALL books</a>
+    </li>
+</ul>
+
+<p>
+    welcome to the home page of the BOOKS website
+</p>
+
+<hr>
+{% block main %}
+{% endblock %}
+</body>
+</html>

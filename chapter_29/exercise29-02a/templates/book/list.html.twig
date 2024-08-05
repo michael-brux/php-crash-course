@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <h1>Book List Page</h1>
+
+
+    <ul>
+    {% for book in books %}
+        <li>
+            id: {{ book.id }}
+            <br>
+            title: {{ book.title }}
+            <br>
+            author: {{ book.author }}
+            <br>
+            $ {{ book.price }}
+        </li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}
