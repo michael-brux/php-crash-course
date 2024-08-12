@@ -4,9 +4,9 @@ function displayHomePage(): void
     require_once '../templates/homePage.php';
 }
 
-function displayContactDetails(): void
+function displayContactUs(): void
 {
-    require_once '../templates/contactDetails.php';
+    require_once '../templates/contactUs.php';
 }
 
 function displayForm(): void

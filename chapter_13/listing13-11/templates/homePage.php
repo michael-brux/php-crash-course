@@ -4,11 +4,11 @@
     >
 </head><body class="container">
 <ul class="nav nav-pills">
-    <li class="nav-item"><a class="nav-link active" href="/">home</a></li>
+    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
     <li class="nav-item"><a class="nav-link"
-                            href="/index.php?action=contact">contact details</a></li>
+                            href="/index.php?action=contactUs">Contact Us</a></li>
     <li class="nav-item"><a class="nav-link"
-                            href="/index.php?action=inquiryForm">submit an inquiry</a></li>
+                            href="/index.php?action=inquiryForm">Inquiry Form</a></li>
 </ul>
 
 <h1>Welcome to MGW</h1>

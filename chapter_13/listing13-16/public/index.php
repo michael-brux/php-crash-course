@@ -4,8 +4,8 @@ require_once '../src/controllerFunctions.php';
 $action = filter_input(INPUT_GET, 'action');
 
 switch ($action) {
-    case 'contact':
-        displayContactDetails();
+    case 'contactUs':
+        displayContactUs();
         break;
 
     case 'inquiryForm':
