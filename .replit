@@ -1,0 +1,16 @@
+modules = ["php-8.2", "web", "python-base-3.13"]
+
+[nix]
+channel = "stable-24_05"
+
+[workflows]
+runButton = "PHP Server"
+
+[[workflows.workflow]]
+name = "PHP Server"
+author = 40190791
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "php -S 0.0.0.0:8000"
